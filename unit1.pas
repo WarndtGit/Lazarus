@@ -13,9 +13,14 @@ type
 
   TForm1 = class(TForm)
     Button1: TButton;
-    Edit1: TEdit;
+    Button2: TButton;
+    Button3: TButton;
+
     Label1: TLabel;
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+
     procedure FormCreate(Sender: TObject);
   private
 
@@ -39,7 +44,23 @@ end;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-  label1.Caption := 'Hallo, ' + Edit1.Text + '!'
+  label1.Caption := 'false'
+  Label1.Color := $e60c0c 
+
+
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  label1.Caption := 'true'
+  Label1.Color := $1077300
+
+
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  label1.Caption := ' '
 
 end;
 

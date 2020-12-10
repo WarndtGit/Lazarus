@@ -8,16 +8,42 @@ object Form1: TForm1
   ClientWidth = 276
   OnCreate = FormCreate
   LCLVersion = '2.0.10.0'
+
+//Button
+
   object Button1: TButton
     Left = 104
     Height = 24
     Top = 120
     Width = 90
-    Caption = 'Button Test'
+    Caption = 'false'
+    Color = #e60c0c 
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+
+ object Button2: TButton
+    Left = 104
+    Height = 24
+    Top = 120
+    Width = 90
+    Caption = 'true'
     Color = 1077300
     OnClick = Button1Click
     TabOrder = 0
   end
+
+   object Button2: TButton
+    Left = 104
+    Height = 24
+    Top = 120
+    Width = 90
+    Caption = 'clear'
+    Color = 1077300
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+
   object Label1: TLabel
     Left = 24
     Height = 17
@@ -33,13 +59,5 @@ object Form1: TForm1
     Font.Style = [fsItalic]
     ParentColor = False
     ParentFont = False
-  end
-  object Edit1: TEdit
-    Left = 24
-    Height = 23
-    Top = 24
-    Width = 80
-    TabOrder = 1
-    Text = 'Edit1'
   end
 end
